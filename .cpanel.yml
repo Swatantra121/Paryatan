@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/digitali/public_html/
+    - export DEPLOYPATH=/home/digitali/paryatan.in/
     - /bin/cp * $DEPLOYPATH
    
