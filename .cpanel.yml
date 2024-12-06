@@ -1,6 +1,5 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/digitali/paryatan.in/
-    - /bin/cp * $DEPLOYPATH
-   
+- name: Copy files to deployment path
+  run: |
+    export DEPLOYPATH=/home/digitali/paryatan.in/
+    /bin/cp -r . $DEPLOYPATH
+  if: success()
